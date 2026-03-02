@@ -7,14 +7,17 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "license": "MIT",
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",
     "tailwindcss": "^4.0.0",
     "vite": "^6.0.0",
-    "vite-plugin-solid": "^2.11.0"
+    "vite-plugin-solid": "^2.11.0",
+    "wrangler": "^4.69.0"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",
